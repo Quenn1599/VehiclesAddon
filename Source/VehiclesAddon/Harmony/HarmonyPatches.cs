@@ -11,7 +11,7 @@ namespace Quenn1599.VehiclesAddon
     static class HarmonyPatches {
         static HarmonyPatches()
         {
-            Harmony harmony = new Harmony("quenn1599.vehiclesaddon");
+            var harmony = new Harmony("quenn1599.vehiclesaddon");
             harmony.PatchAll();
         }
     }
