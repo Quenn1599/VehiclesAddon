@@ -1,0 +1,18 @@
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+        <defName>Bullet_HoverTankAutocannon</defName>
+        <label>heavy autocannon shell</label>
+        <graphicData>
+	    	<texPath>Things/Projectile/Bullet_Big</texPath>
+	    	<graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+	    	<damageDef>Bomb</damageDef>
+            <explosionRadius>1.0</explosionRadius>
+	    	<damageAmountBase>30</damageAmountBase>
+	    	<stoppingPower>1.5</stoppingPower>
+	    	<speed>100</speed>
+        </projectile>
+  </ThingDef>
+</Defs>

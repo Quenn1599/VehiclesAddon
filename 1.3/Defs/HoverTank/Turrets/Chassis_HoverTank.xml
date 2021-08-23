@@ -1,0 +1,76 @@
+<Defs>
+	<Vehicles.VehicleTurretDef ParentName="TurretBase">
+		<defName>HoverTankChassis</defName>
+		<label>Hover Tank Chassis</label>
+		<weaponType>Rotatable</weaponType>
+		<cannonSound>Shot_Minigun</cannonSound>
+		<reloadSound>Artillery_ShellLoaded</reloadSound>
+		<projectile>Bullet_50CalMounted</projectile>
+
+		<reloadTimer>8</reloadTimer>
+		<warmUpTimer>1</warmUpTimer>
+		<magazineCapacity>50</magazineCapacity>
+		<genericAmmo>true</genericAmmo>
+		
+		<recoil>
+			<distanceTotal>0</distanceTotal>
+			<distancePerTick>0</distancePerTick>
+			<speedMultiplierPostRecoil>0</speedMultiplierPostRecoil>
+		</recoil>
+
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenBursts>20</ticksBetweenBursts>
+				<spreadRadius>1.25</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>6</shotsPerBurst>
+				<ticksBetweenShots>6</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<spreadRadius>1.6</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>6</shotsPerBurst>
+				<ticksBetweenShots>6</ticksBetweenShots>
+				<ticksBetweenBursts>6</ticksBetweenBursts>
+				<spreadRadius>2.5</spreadRadius>
+				<label>Full-Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+
+		<graphicData>
+			<texPath>VehiclesAddon/Land/HoverTank/HoverTankChassis/HoverTankChassis</texPath>
+			<graphicClass>Vehicles.Graphic_Cannon</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(4, 7)</drawSize>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+		
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_CannonPlume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+		
+		<projectileOffset>4.75</projectileOffset>
+		<hitFlags>All</hitFlags>
+		<maxRange>40</maxRange>
+		<minRange>7</minRange>
+	</Vehicles.VehicleTurretDef>
+</Defs>

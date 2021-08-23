@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>HoverTank_Blueprint</defName>
+		<label>Hover tank</label>
+		<description>An armored combat vehicle with enhanced mobility.</description>
+		<graphicData>
+			<texPath>VehiclesAddon/Land/HoverTank/HoverTank</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,7)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>20000</MaxHitPoints>
+			<WorkToBuild>30</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		<size>(3,5)</size>
+		
+		<researchPrerequisites/>
+		
+		<costList>
+			<ComponentIndustrial>35</ComponentIndustrial>
+			<Steel>3000</Steel>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>HoverTank</thingToSpawn>
+		<soundBuilt>ShipBigConstruction</soundBuilt>
+	</Vehicles.VehicleBuildDef>
+</Defs>

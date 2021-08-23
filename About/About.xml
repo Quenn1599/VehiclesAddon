@@ -1,0 +1,20 @@
+<ModMetaData>
+    <name>Vehicles Addon</name>
+    <description>A mod where I just do whatever to learn stuff.</description>
+    <author>Quenn1599</author>
+    <supportedVersions>
+        <li>1.3</li>
+    </supportedVersions>
+    <packageId>quenn1599.vehiclesaddon</packageId>
+    <modDependencies>
+        <li>
+            <packageId>smashphil.vehicles</packageId>
+            <displayName>Vehicle Framework</displayName>
+            <downloadUrl>https://github.com/SmashPhil/Vehicles/releases</downloadUrl>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2356577528</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>smashphil.vehicles</li>
+    </loadAfter>
+</ModMetaData>

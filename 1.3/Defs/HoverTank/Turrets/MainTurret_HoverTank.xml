@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<Vehicles.VehicleTurretDef ParentName="TurretBase">
+		<defName>HoverTankMainTurret</defName>
+		<label>Hover Tank Autocannon</label>
+		<weaponType>Rotatable</weaponType>
+		<cannonSound>Shot_Autocannon</cannonSound>
+		<reloadSound>Artillery_ShellLoaded</reloadSound>
+		<projectile>Bullet_HoverTankAutocannon</projectile>
+
+		<reloadTimer>10</reloadTimer>
+		<warmUpTimer>1.25</warmUpTimer>
+		<magazineCapacity>60</magazineCapacity>
+		<genericAmmo>true</genericAmmo>
+		
+		<recoil>
+			<distanceTotal>0.5</distanceTotal>
+			<distancePerTick>0.15</distancePerTick>
+			<speedMultiplierPostRecoil>0.35</speedMultiplierPostRecoil>
+		</recoil>
+		<vehicleRecoil>
+			<distanceTotal>0.2</distanceTotal>
+			<distancePerTick>0.15</distancePerTick>
+			<speedMultiplierPostRecoil>0.75</speedMultiplierPostRecoil>
+		</vehicleRecoil>
+		
+		<attachProjectileFlag>Tank</attachProjectileFlag>
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<spreadRadius>3</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>3</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<spreadRadius>5</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>6</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>10</ticksBetweenBursts>
+				<spreadRadius>7</spreadRadius>
+				<label>Full-Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1</rotationSpeed>
+
+		<graphicData>
+			<texPath>VehiclesAddon/Land/HoverTank/HoverTankCannonTop/HoverTankCannonTop_a</texPath>
+			<graphicClass>Vehicles.Graphic_Cannon</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(7, 7)</drawSize>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+		
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_CannonPlume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+		
+		<projectileOffset>4.75</projectileOffset>
+		<hitFlags>IntendedTarget</hitFlags>
+		<maxRange>-1</maxRange>
+		<minRange>10</minRange>
+	</Vehicles.VehicleTurretDef>
+</Defs>
