@@ -7,7 +7,7 @@
     <ProjectGuid>{294D4695-83BE-4491-A266-738C3367AB8B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VehiclesAddon</RootNamespace>
+    <RootNamespace>Quenn1599.VehiclesAddon</RootNamespace>
     <AssemblyName>VehiclesAddon</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
