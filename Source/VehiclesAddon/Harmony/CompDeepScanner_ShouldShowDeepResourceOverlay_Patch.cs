@@ -19,11 +19,9 @@ namespace Quenn1599.VehiclesAddon
             {
                 if (instruction.opcode == OpCodes.Ldc_I4_0)
                 {
-                    yield return new CodeInstruction(OpCodes.Ldc_I4_1);
-                } else
-                {
-                    yield return instruction;
+                    instruction.opcode = OpCodes.Ldc_I4_1;
                 }
+                yield return instruction;
             }
         }
     }
