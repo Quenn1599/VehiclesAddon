@@ -90,9 +90,9 @@
 					<handlingTypes>
 						<li>Cannon</li>
 					</handlingTypes>
-					<cannonIds>
+					<turretIds>
 						<li>mainTurret</li>
-					</cannonIds>
+					</turretIds>
 					<hitbox>
 						<cells>
 							<li>(0,0)</li>
@@ -108,9 +108,9 @@
 						<li>Cannon</li>
 						<li>Movement</li>
 					</handlingTypes>
-					<cannonIds>
+					<turretIds>
 						<li>chassisTurret</li>
-					</cannonIds>
+					</turretIds>
 					<hitbox>
 						<cells>
 							<li>(0,1)</li>
@@ -123,7 +123,6 @@
 			</customTerrainCosts>
 			<customThingCosts>
 			</customThingCosts>
-			<snowPathingMultiplier>1.0</snowPathingMultiplier>
 			<pathTurnCost>25</pathTurnCost>
 		</properties>
 		
@@ -268,8 +267,11 @@
 				<turrets>
 					<li>
 						<turretDef>HoverTankChassis</turretDef>
-						<turretRenderLocation>(0, 0)</turretRenderLocation>
-						<turretRenderOffset>(0, 0)</turretRenderOffset>
+						<renderProperties>
+							<north>
+								<offset>(0, 0)</offset>
+							</north>
+						</renderProperties>
 
 						<gizmoLabel>Tank Chassis</gizmoLabel>
 						<autoTargeting>true</autoTargeting>
@@ -282,8 +284,11 @@
 					</li>
 					<li>
 						<turretDef>HoverTankMainTurret</turretDef>
-						<turretRenderLocation>(0, 0)</turretRenderLocation>
-						<turretRenderOffset>(0, 0)</turretRenderOffset>
+						<renderProperties>
+							<north>
+								<offset>(0, 0)</offset>
+							</north>
+						</renderProperties>
 
 						<gizmoLabel>Main Turret</gizmoLabel>
 						<autoTargeting>true</autoTargeting>
@@ -302,12 +307,13 @@
 					<li Class="Vehicles.StatUpgrade">
 						<upgradeID>Armor_I</upgradeID>
 						<label>Steel Plating</label>
-						<imageFilePath>UI/UpgradeTree/ArmorBG</imageFilePath>
-						<gridCoordinate>(2,2)</gridCoordinate>
-						<rootNodeLabel>Armor</rootNodeLabel>
+						<icon>UI/UpgradeTree/ArmorBG</icon>
+						<gridCoordinate>(2,1)</gridCoordinate>
 						<informationHighlighted>1-inch steel plating for standard defense against bullets and low caliber cannons.</informationHighlighted>
-						
-						<upgradeTime>9h</upgradeTime>
+						<drawColorOne>(0.25, 0.25, 0.25)</drawColorOne>
+						<drawColorTwo>(0.25, 0.25, 0.25)</drawColorTwo>
+						<drawColorThree>(0.25, 0.25, 0.25)</drawColorThree>
+						<work>3500</work>
 						<values>
 							<li>
 								<key>StatUpgradeArmor</key>
