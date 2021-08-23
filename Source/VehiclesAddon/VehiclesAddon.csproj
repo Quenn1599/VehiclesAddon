@@ -61,9 +61,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Harmony\DeepResourceGrid_AnyActiveDeepScannersOnMap_Patch.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
     <Compile Include="Harmony\CompDeepScanner_ShouldShowDeepResourceOverlay_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VehicleComps\CompProperties_VehicleDeepScanner.cs" />
+    <Compile Include="VehicleComps\CompVehicleDeepScanner.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

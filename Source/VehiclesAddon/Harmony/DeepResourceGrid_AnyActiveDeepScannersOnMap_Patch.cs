@@ -8,7 +8,7 @@ using RimWorld;
 using Verse;
 using Vehicles;
 
-namespace Quenn1599.VehiclesAddon.Harmony
+namespace Quenn1599.VehiclesAddon
 {
     [HarmonyPatch(typeof(DeepResourceGrid), "AnyActiveDeepScannersOnMap")]
     public static class DeepResourceGrid_AnyActiveDeepScannersOnMap_Patch

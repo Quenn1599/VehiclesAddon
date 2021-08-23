@@ -227,7 +227,7 @@
 		</race>
 
 		<comps>
-    	    <li Class="CompProperties_ScannerMineralsDeep">
+    	    <li Class="Quenn1599.VehiclesAddon.CompProperties_VehicleDeepScanner">
       			<scanSpeedStat>ResearchSpeed</scanSpeedStat>
       			<scanFindMtbDays>3</scanFindMtbDays>
       			<scanFindGuaranteedDays>6</scanFindGuaranteedDays>
