@@ -188,16 +188,6 @@
 		</race>
 
 		<comps>
-			<li Class="CompProperties_ProjectileInterceptor">
-        		<radius>25</radius>
-        		<interceptAirProjectiles>true</interceptAirProjectiles>
-        		<color>(0.6, 0.6, 0.6)</color>
-        		<reactivateEffect>MortarShieldGenerator_Reactivate</reactivateEffect>
-        		<activeSound>MortarShield_Ambience</activeSound>
-       			<disarmedByEmpForTicks>1080</disarmedByEmpForTicks>
-        		<chargeIntervalTicks>600000</chargeIntervalTicks>
-        		<chargeDurationTicks>60000</chargeDurationTicks>
-      		</li>
 			<li Class="Quenn1599.VehiclesAddon.CompProperties_VehicleDeepScanner">
 				<roleKey>scanner</roleKey>
       			<scanSpeedStat>ResearchSpeed</scanSpeedStat>
@@ -216,5 +206,6 @@
 				<upgrades/>
 			</li>
 		</comps>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 	</Vehicles.VehicleDef>
 </Defs>

@@ -227,12 +227,16 @@
 		</race>
 
 		<comps>
-    	    <li Class="Quenn1599.VehiclesAddon.CompProperties_VehicleDeepScanner">
-				<roleKey>commander</roleKey>
-      			<scanSpeedStat>ResearchSpeed</scanSpeedStat>
-      			<scanFindMtbDays>3</scanFindMtbDays>
-      			<scanFindGuaranteedDays>6</scanFindGuaranteedDays>
-       		 	<soundWorking>ScannerGroundPenetrating_Ambience</soundWorking>
+    	    <li Class="CompProperties_ProjectileInterceptor">
+        		<radius>10</radius>
+        		<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<interceptAirProjectiles>true</interceptAirProjectiles>
+        		<color>(0.4, 0.4, 0.4)</color>
+        		<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        		<activeSound>BulletShield_Ambience</activeSound>
+        		<disarmedByEmpForTicks>1080</disarmedByEmpForTicks>
+        		<chargeIntervalTicks>600000</chargeIntervalTicks>
+        		<chargeDurationTicks>60000</chargeDurationTicks>
       		</li>
 			<li Class="Vehicles.CompProperties_FueledTravel">
 				<fuelType>Chemfuel</fuelType>
@@ -341,5 +345,8 @@
 				</upgrades>
 			</li>
 		</comps>
+		<placeWorkers>
+      		<li>PlaceWorker_ShowProjectileInterceptorRadius</li>
+    	</placeWorkers>
 	</Vehicles.VehicleDef>
 </Defs>
