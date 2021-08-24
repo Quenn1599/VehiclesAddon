@@ -48,7 +48,10 @@ namespace Quenn1599.VehiclesAddon
                 this.lastUserSpeed = 0f;
                 foreach(Pawn p in crew)
                 {
-                    this.lastUserSpeed += p.GetStatValue(this.Props.scanSpeedStat, true);
+                    if (!p.WorkTypeIsDisabled(WorkTypeDefOf.Research))
+                    {
+                        this.lastUserSpeed += p.GetStatValue(this.Props.scanSpeedStat, true);
+                    }
                 }
             }
             this.daysWorkingSinceLastFinding += this.lastUserSpeed / 60000f;
