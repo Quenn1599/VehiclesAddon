@@ -228,6 +228,7 @@
 
 		<comps>
     	    <li Class="Quenn1599.VehiclesAddon.CompProperties_VehicleDeepScanner">
+				<roleKey>commander</roleKey>
       			<scanSpeedStat>ResearchSpeed</scanSpeedStat>
       			<scanFindMtbDays>3</scanFindMtbDays>
       			<scanFindGuaranteedDays>6</scanFindGuaranteedDays>
