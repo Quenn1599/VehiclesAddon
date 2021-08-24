@@ -27,7 +27,7 @@
 		
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		
-		<thingToSpawn>Car</thingToSpawn>
+		<thingToSpawn>DrillerTest</thingToSpawn>
 		<soundBuilt>ShipBigConstruction</soundBuilt>
 	</Vehicles.VehicleBuildDef>
 </Defs>
