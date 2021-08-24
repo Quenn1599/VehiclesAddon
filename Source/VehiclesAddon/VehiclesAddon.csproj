@@ -66,6 +66,7 @@
     <Compile Include="Harmony\CompDeepScanner_ShouldShowDeepResourceOverlay_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VehicleComps\CompProperties_VehicleDeepScanner.cs" />
+    <Compile Include="VehicleComps\CompVehicleBreacher.cs" />
     <Compile Include="VehicleComps\CompVehicleDeepScanner.cs" />
   </ItemGroup>
   <ItemGroup />
