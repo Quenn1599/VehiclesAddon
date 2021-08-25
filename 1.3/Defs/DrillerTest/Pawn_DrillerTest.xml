@@ -113,6 +113,9 @@
 					<value>-1</value>
 				</li>
 			</customTerrainCosts>
+			<customThingCosts>
+
+			</customThingCosts>
 		</properties>
 		
 		<components>
