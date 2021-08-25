@@ -66,8 +66,8 @@
     <Compile Include="Harmony\HarmonyPatches.cs" />
     <Compile Include="Harmony\CompDeepScanner_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VehicleComps\CompProperties_VehicleDeepScanner.cs" />
-    <Compile Include="VehicleComps\CompVehicleDeepScanner.cs" />
+    <Compile Include="Comps\CompProperties_VehicleDeepScanner.cs" />
+    <Compile Include="Comps\CompVehicleDeepScanner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AI\Jobs\" />
