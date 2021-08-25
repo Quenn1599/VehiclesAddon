@@ -61,7 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\Jobs\JobGiver_VehicleBreaker.cs" />
     <Compile Include="Harmony\DeepResourceGrid_AnyActiveDeepScannersOnMap_Patch.cs" />
+    <Compile Include="Harmony\FloatMenuMakerMap_GotoLocationOption_Patch.cs" />
     <Compile Include="Harmony\HarmonyPatches.cs" />
     <Compile Include="Harmony\CompDeepScanner_ShouldShowDeepResourceOverlay_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
