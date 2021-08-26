@@ -7,6 +7,7 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 using Vehicles;
+using Verse.AI;
 
 namespace Quenn1599.VehiclesAddon
 {
@@ -18,7 +19,19 @@ namespace Quenn1599.VehiclesAddon
         {
             if (pawn is VehiclePawn vehicle)
             {
-
+                CompVehicleBreacher breacher = vehicle.TryGetComp<CompVehicleBreacher>();
+                if (breacher != null) // Maybe have an activator check?
+                {
+                    // Change result for alternative navigation
+                    __result = new FloatMenuOption("GoHere".Translate(), delegate ()
+                    {
+                        vehicle.mindState.duty = new PawnDuty(DutyDefOf.VehicleBreach, clickCell);
+                    }, MenuOptionPriority.GoHere, null, null, 0f, null)
+                    {
+                        autoTakeable = true,
+                        autoTakeablePriority = 10f
+                    };
+                }
             }
         }
     }
