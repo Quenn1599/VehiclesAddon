@@ -198,6 +198,8 @@
       			<scanFindGuaranteedDays>6</scanFindGuaranteedDays>
        		 	<soundWorking>ScannerGroundPenetrating_Ambience</soundWorking>
       		</li>
+			<li Class="Quenn1599.VehiclesAddon.CompProperties_VehicleBreacher">
+      		</li>
 			<li Class="Vehicles.CompProperties_FueledTravel">
 				<!-- Must Include -->
 				<fuelType>Chemfuel</fuelType>
