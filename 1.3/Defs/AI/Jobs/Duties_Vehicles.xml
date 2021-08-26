@@ -1,0 +1,11 @@
+<Defs>
+  <DutyDef>
+    <defName>VehicleBreach</defName>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Vehicle version of sapper behavior -->
+        <li Class="JobGiver_VehicleBreach" />
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+</Defs>

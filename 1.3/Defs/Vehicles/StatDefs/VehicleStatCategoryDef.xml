@@ -8,5 +8,6 @@
 		<operationType>Average</operationType>
 		<workerClass>Quenn1599.VehiclesAddon.VehicleStatWorker_MiningSpeed</workerClass>
 		<priority>100</priority>
+        <description>Vehicle mining speed in hp per second.</description>
 	</Vehicles.VehicleStatCategoryDef>
 </Defs>
